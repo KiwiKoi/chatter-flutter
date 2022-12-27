@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "854298776334",
+    "firebase_url": "https://chatter-app-33613-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "chatter-app-33613",
+    "storage_bucket": "chatter-app-33613.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:854298776334:android:b712914a0d0014fc13bd5f",
+        "android_client_info": {
+          "package_name": "com.example.chatter_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "854298776334-uct2hk9gc96m43qlna6gekdidhfskaq7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBetQMEWpshq74NnwzPD5PbfQdGcDqr96o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "854298776334-uct2hk9gc96m43qlna6gekdidhfskaq7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "854298776334-dbnteb03288b88dbsgcec7qd6m6o916q.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.chatterFlutter"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
