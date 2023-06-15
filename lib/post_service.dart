@@ -35,12 +35,10 @@ class Post {
       this.image = '',
       this.published = false});
 
-  factory Post.fromJson(json) {
-    return Post(
+  factory Post.fromJson(json) => Post(
         id: json['id'],
         title: json['title'],
         body: json['body'],
         image: json['image'],
         published: json['published']);
-  }
 }

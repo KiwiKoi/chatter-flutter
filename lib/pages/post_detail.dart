@@ -1,33 +1,30 @@
-import 'dart:convert';
-import 'package:chatter_flutter/post_service.dart';
 import 'package:flutter/material.dart';
 
 class PostDetail extends StatefulWidget {
-  const PostDetail({super.key, required this.title});
+  const PostDetail({super.key});
   static const routeName = '/postDetail';
-  final String title;
+  final String title = 'post detail';
 
   @override
   State<PostDetail> createState() => _PostDetailState();
 }
 
 class _PostDetailState extends State<PostDetail> {
-  var data;
-  Object? parameters;
+  late Map<String, dynamic> data;
 
   @override
   Widget build(BuildContext context) {
     final parameters = ModalRoute.of(context)!.settings.arguments;
-    print(parameters);
-
-    Map data = jsonDecode(jsonEncode(parameters));
+    data = parameters as Map<String, dynamic>;
 
     return Scaffold(
         appBar: AppBar(
           title: Text(widget.title),
         ),
-        body: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [Text(data.titre)]));
+        body: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+          Text(data['title']),
+          Text(data['body']),
+          Image.asset(data['image'])
+        ]));
   }
 }

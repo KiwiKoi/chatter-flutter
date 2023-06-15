@@ -44,7 +44,7 @@ class _HomeState extends State<Home> {
                           child: ListTile(
                             title: Text(
                               snapshot.data![i].title,
-                              style: TextStyle(fontSize: 30.0),
+                              style: const TextStyle(fontSize: 30.0),
                             ),
                           ),
                         ));
@@ -69,7 +69,7 @@ class _HomeState extends State<Home> {
           });
         },
         tooltip: 'Fetch data',
-        child: Icon(Icons.refresh),
+        child: const Icon(Icons.refresh),
       ),
     );
   }

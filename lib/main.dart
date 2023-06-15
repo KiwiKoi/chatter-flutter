@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         ),
         home: const Home(title: 'Chatter App'),
         routes: {
-          PostDetail.routeName: (context) => PostDetail(title: 'Post detail'),
+          PostDetail.routeName: (context) => const PostDetail(),
         });
   }
 }
